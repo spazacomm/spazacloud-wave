@@ -13,7 +13,7 @@ return [
         'height' => '40',
     ],
     'background' => [
-        'color' => '#ffffff',
+        'color' => '#62cfe4',
         'image' => '/storage/auth/background.jpg',
         'image_overlay_color' => '#ffffff',
         'image_overlay_opacity' => '1',
