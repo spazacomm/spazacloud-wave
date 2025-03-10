@@ -1,32 +1,15 @@
 version: '3.8'
-
 services:
-  app:
-    image: spazacloud-wave:latest
+  frankenphp:
     build:
       context: .
-      dockerfile: Dockerfile
-    networks:
-      - laravel-network
-    deploy:
-      replicas: 3
-      update_config:
-        parallelism: 1
-        delay: 10s
-      restart_policy:
-        condition: on-failure
-
-  web:
-    image: nginx:latest
     ports:
-      - "80:80"
+      - "8080:8080"
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf
-    networks:
-      - laravel-network
-    depends_on:
-      - app
-
-networks:
-  laravel-network:
-    driver: overlay
+      - .:/app
+    environment:
+      - APP_ENV=production
+      - APP_KEY=base64:8dQ7xw/kM9EYMV4cUkzKgET8jF4P0M0TOmmqN05RN2w=
+      - APP_NAME=Wave
+      - APP_DEBUG=true
+      - DB_CONNECTION=sqlite
