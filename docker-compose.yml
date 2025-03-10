@@ -37,7 +37,6 @@ services:
     container_name: spazacloud-wave-nginx
     restart: unless-stopped
     ports:
-      - 8000
       - 80
     volumes:
       - ./:/var/www
