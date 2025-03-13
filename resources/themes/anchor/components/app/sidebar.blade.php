@@ -31,9 +31,10 @@
 
                 <div class="flex flex-col justify-start items-center px-4 space-y-1.5 w-full h-full text-slate-600 dark:text-zinc-400">
                     <x-app.sidebar-link href="/dashboard" icon="phosphor-house" :active="Request::is('dashboard')">Dashboard</x-app.sidebar-link>
-                    <x-app.sidebar-link href="/dashboard" icon="phosphor-cloud-fog" :active="Request::is('apps')">Apps</x-app.sidebar-link>
-                    <x-app.sidebar-link href="/dashboard" icon="phosphor-credit-card" :active="Request::is('settings/billing')">Billing & Subscription</x-app.sidebar-link>
-                    <x-app.sidebar-link href="/dashboard" icon="phosphor-clock-counter-clockwise" :active="Request::is('backups')">Backups & Restore</x-app.sidebar-link>
+                    <x-app.sidebar-link href="/apps" icon="phosphor-cloud-fog" :active="Request::is('apps')">Apps</x-app.sidebar-link>
+                    <!-- <x-app.sidebar-link href="/backups" icon="phosphor-clock-counter-clockwise" :active="Request::is('backups')">Backups & Restore</x-app.sidebar-link> -->
+                    <x-app.sidebar-link href="/settings/billing" icon="phosphor-credit-card" :active="Request::is('settings/billing')">Billing & Subscription</x-app.sidebar-link>
+                   
                     <x-app.sidebar-link href="/settings/profile" icon="phosphor-gear-six" :active="Request::is('settings/profile')">Settings</x-app.sidebar-link>
                     <!-- <x-app.sidebar-dropdown text="Projects" icon="phosphor-stack" id="projects_dropdown" :active="(Request::is('projects'))" :open="(Request::is('project_a') || Request::is('project_b') || Request::is('project_c')) ? '1' : '0'">
                         <x-app.sidebar-link onclick="event.preventDefault(); new FilamentNotification().title('Modify this button inside of sidebar.blade.php').send()" icon="phosphor-cube" :active="(Request::is('project_a'))">Project A</x-app.sidebar-link>
