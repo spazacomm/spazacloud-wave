@@ -24,7 +24,7 @@
 <x-layouts.app>
     @volt('settings.subscription') 
         <div class="relative">
-            <x-app.settings-layout
+            <x-app.billing-layout
                 title="Subscriptions"
                 description="Your subscription details"
             >

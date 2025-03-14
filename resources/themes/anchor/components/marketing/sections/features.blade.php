@@ -4,7 +4,7 @@
         title="Master the Seas of <br> Product Development"
         description="Harness the power of Wave's extensive features to fast-track your SaaS projects. Get ready to fall in love with the future of SaaS development, today." 
     />
-    <div class="text-center">
+    <div class="text-center ">
         <div class="grid grid-cols-2 gap-x-6 gap-y-12 mt-12 text-center lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
             <div>
                 <div class="flex justify-center items-center mx-auto bg-zinc-100 rounded-full size-12">

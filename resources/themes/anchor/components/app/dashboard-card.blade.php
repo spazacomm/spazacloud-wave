@@ -8,7 +8,7 @@
             <span class="absolute bottom-0 left-0 w-0 h-px duration-200 ease-out translate-y-1 group-hover:w-full bg-slate-400"></span>
         </span>
     </span>
-    <!-- <img src="{{ $image ?? '' }}" class="w-auto h-32 dark:invert dark:brightness-90"> -->
+    
 
     <div class="relative w-auto h-32 rounded-t-lg p-4">
         <img src="{{ $image ?? '' }}" class="w-full h-full object-cover rounded-t-lg">

@@ -10,7 +10,7 @@
 
 <x-layouts.app>
         <div class="relative">
-            <x-app.settings-layout
+            <x-app.billing-layout
                 title="Invoices"
                 description="Your past plan invoices"
             >

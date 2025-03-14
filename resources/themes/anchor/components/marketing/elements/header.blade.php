@@ -26,8 +26,8 @@
             evaluateScrollPosition(); 
         })
     " 
-    :class="{ 'border-gray-200/60 bg-white/90 border-b backdrop-blur-lg' : scrolled, 'border-transparent border-b bg-transparent translate-y-0' : !scrolled }" 
-    class="box-content sticky top-0 z-50 w-full h-24" 
+    :class="{ 'border-gray-200/60 bg-white/90 border-b backdrop-blur-lg' : scrolled, 'border-transparent border-b bg-custom-light-blue translate-y-0' : !scrolled }" 
+    class="box-content sticky top-0 z-50 w-full h-24 " 
 >
     <div 
         x-show="showOverlay"
@@ -38,7 +38,7 @@
         <div class="w-screen h-full bg-black/50"></div>
     </div>
     <x-container>
-        <div class="z-30 flex items-center justify-between h-24 md:space-x-8">
+        <div class="z-30 flex items-center justify-between h-24 md:space-x-8 ">
             <div class="z-20 flex items-center justify-between w-full md:w-auto">
                 <div class="relative z-20 inline-flex">
                     <a href="{{ route('home') }}" class="flex items-center justify-center space-x-3 font-bold text-zinc-900">

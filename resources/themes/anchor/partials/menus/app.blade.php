@@ -1,4 +1,4 @@
-<div x-data="{ open: false }" class="flex h-full md:flex-1">
+<div x-data="{ open: false }" class="flex h-full md:flex-1 ">
     <div class="hidden flex-1 space-x-8 h-full font-semibold md:flex">
         <a href="{{ route('wave.dashboard') }}" class="inline-flex items-center px-1 pt-1 text-sm leading-5 transition duration-150 ease-in-out focus:outline-none border-b-2 border-transparent @if(Request::is('dashboard')){{ 'text-zinc-900' }}@else{{ 'text-zinc-800 hover:text-zinc-900' }}@endif">Dashboard</a>
         <div x-data="{ dropdown: false }" @mouseenter="dropdown = true" @mouseleave="dropdown=false" @click.away="dropdown=false" class="inline-flex relative items-center px-1 pt-1 text-sm leading-5 border-b-2 border-transparent transition duration-150 ease-in-out cursor-pointer text-zinc-800 hover:text-zinc-900 hover:border-zinc-300">

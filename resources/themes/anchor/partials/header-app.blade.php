@@ -1,4 +1,4 @@
-<header x-data="{ mobileMenuOpen: false }" class="absolute z-30 w-full">
+<header x-data="{ mobileMenuOpen: false }" class="absolute z-30 w-full ">
     <x-container>
         <div class="flex relative z-30 justify-between items-center h-24 md:space-x-8">
             <div class="inline-flex">
