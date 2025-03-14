@@ -35,7 +35,17 @@ export default {
                     from: { transform: 'translateX(0)' },
                     to: { transform: 'translateX(-100%)' },
                 }
-            } 
+            },
+            colors: {
+                'custom-light-blue': '#D3F0F5',
+                'custom-white-dark': '#FAFAFC',
+                'custom-light-cyan': '#419BA1',
+                'custom-light-gray': '#F5F5F8',
+                'custom-dark-cyan': '#325076',
+                'custom-dark-gray': '#0B445D',
+                'custom-cyan': '#2495BA',
+                'custom-dark': '#39547B',
+              }, 
         },
     },
 

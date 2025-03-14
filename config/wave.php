@@ -19,7 +19,7 @@ return [
 		'min_password_length' => 5,
 	],
 
-	'primary_color' => '#000000',
+	'primary_color' => '#2495BA',
 
 	'user_model' => \App\Models\User::class,
 	'show_docs' => env('WAVE_DOCS', true),
@@ -27,7 +27,7 @@ return [
     'dev_bar' => env('WAVE_BAR', false),
 	'default_user_role' => 'registered',
 
-	'billing_provider' => env('BILLING_PROVIDER', 'stripe'),
+	'billing_provider' => env('BILLING_PROVIDER', 'paddle'),
 
     'paddle' => [
         'vendor' => env('PADDLE_VENDOR_ID', ''),

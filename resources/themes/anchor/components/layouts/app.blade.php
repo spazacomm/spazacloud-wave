@@ -11,7 +11,7 @@
         }
     </script>
 </head>
-<body x-data class="flex flex-col lg:min-h-screen bg-zinc-50 dark:bg-zinc-900 @if(config('wave.dev_bar')){{ 'pb-10' }}@endif">
+<body x-data class="flex flex-col lg:min-h-screen bg-custom-white-dark dark:bg-zinc-900 @if(config('wave.dev_bar')){{ 'pb-10' }}@endif">
 
     <x-app.sidebar />
 
@@ -25,7 +25,7 @@
         </header>
         {{-- End Mobile Header --}}
         <main class="flex flex-col flex-1 xl:px-0 lg:pt-4 lg:h-screen">
-            <div class="flex-1 h-full overflow-hidden bg-white border-t border-l-0 lg:border-l dark:bg-zinc-800 lg:rounded-tl-xl border-zinc-200/70 dark:border-zinc-700">
+            <div class="flex-1 h-full overflow-hidden bg-custom-white-dark  dark:bg-zinc-800 lg:rounded-tl-xl border-zinc-200/70 dark:border-zinc-700">
                 <div class="w-full h-full px-5 sm:px-8 lg:overflow-y-scroll scrollbar-hidden lg:pt-5 lg:px-5">
                     {{ $slot }}
                 </div>

@@ -1,4 +1,4 @@
-<section class="relative top-0 flex flex-col items-center justify-center w-full min-h-screen -mt-24 bg-white lg:min-h-screen">
+<section class="relative top-0 flex flex-col items-center justify-center w-full min-h-screen -mt-24 bg-custom-light-blue lg:min-h-screen">
     
         <div class="flex flex-col items-center justify-between flex-1 w-full max-w-2xl gap-6 px-8 pt-32 mx-auto text-left md:px-12 xl:px-20 lg:pt-32 lg:pb-16 lg:max-w-7xl lg:flex-row">
             <div class="w-full lg:w-1/2">

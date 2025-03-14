@@ -1,6 +1,6 @@
-<a href="{{ $href ?? '' }}" @if($target ?? false) target="_blank" @endif class="flex overflow-hidden relative p-5 w-full bg-white dark:bg-zinc-800 rounded-lg border duration-300 ease-out group border-slate-200 dark:border-zinc-700 hover:scale-[1.01]">
+<a href="{{ $href ?? '' }}" @if($target ?? false) target="_blank" @endif class="flex overflow-hidden relative p-5 w-full bg-custom-light-gray dark:bg-zinc-800 rounded-lg border duration-300 ease-out group border-slate-200 dark:border-zinc-700 hover:scale-[1.01]">
     <span class="flex relative flex-col justify-center items-start pr-0 pb-1 space-y-3 h-full">
-        <span class="block text-lg font-bold tracking-tight leading-tight text-slate-700 dark:text-white">{{ $title ?? '' }}</span>
+        <span class="block text-lg font-bold tracking-tight leading-tight text-custom-cyan dark:text-white">{{ $title ?? '' }}</span>
         <span class="block text-sm opacity-60 dark:text-zinc-200">{{ $description ?? '' }}</span>
         <span class="inline-flex relative justify-start items-center -mt-1 mb-2 w-auto text-xs tracking-tight leading-none text-slate-600 dark:text-slate-300">
             <span class="inline-block flex-shrink-0 mr-0">{{ $linkText ?? '' }}</span>
@@ -8,5 +8,10 @@
             <span class="absolute bottom-0 left-0 w-0 h-px duration-200 ease-out translate-y-1 group-hover:w-full bg-slate-400"></span>
         </span>
     </span>
-    <img src="{{ $image ?? '' }}" class="w-auto h-32 dark:invert dark:brightness-90">
+    <!-- <img src="{{ $image ?? '' }}" class="w-auto h-32 dark:invert dark:brightness-90"> -->
+
+    <div class="relative w-auto h-32 rounded-t-lg p-4">
+        <img src="{{ $image ?? '' }}" class="w-full h-full object-cover rounded-t-lg">
+        <div class="absolute inset-0 bg-custom-light-cyan opacity-40 rounded-t-lg"></div>
+    </div>
 </a>

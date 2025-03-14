@@ -10,7 +10,7 @@
     
     {{-- Sidebar --}} 
     <div :class="{ '-translate-x-full': !sidebarOpen }"
-        class="fixed top-0 left-0 flex items-stretch -translate-x-full overflow-hidden lg:translate-x-0 z-50 h-dvh md:h-screen transition-[width,transform] duration-150 ease-out bg-zinc-50 dark:bg-zinc-900 w-64 group @if(config('wave.dev_bar')){{ 'pb-10' }}@endif">  
+        class="fixed top-0 left-0 flex items-stretch -translate-x-full overflow-hidden lg:translate-x-0 z-50 h-dvh md:h-screen transition-[width,transform] duration-150 ease-out bg-custom-dark dark:bg-zinc-900 w-64 group @if(config('wave.dev_bar')){{ 'pb-10' }}@endif">  
         <div class="flex flex-col justify-between w-full overflow-auto md:h-full h-svh pt-4 pb-2.5">
             <div class="relative flex flex-col">
                 <button x-on:click="sidebarOpen=false" class="flex items-center justify-center flex-shrink-0 w-10 h-10 ml-4 rounded-md lg:hidden text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 dark:hover:bg-zinc-700/70 hover:bg-gray-200/70">
@@ -29,11 +29,11 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col justify-start items-center px-4 space-y-1.5 w-full h-full text-slate-600 dark:text-zinc-400">
+                <div class="flex flex-col justify-start items-center px-4 space-y-1.5 w-full h-full text-white dark:text-zinc-400">
                     <x-app.sidebar-link href="/dashboard" icon="phosphor-house" :active="Request::is('dashboard')">Dashboard</x-app.sidebar-link>
                     <x-app.sidebar-link href="/apps" icon="phosphor-cloud-fog" :active="Request::is('apps')">Apps</x-app.sidebar-link>
                     <!-- <x-app.sidebar-link href="/backups" icon="phosphor-clock-counter-clockwise" :active="Request::is('backups')">Backups & Restore</x-app.sidebar-link> -->
-                    <x-app.sidebar-link href="/settings/billing" icon="phosphor-credit-card" :active="Request::is('settings/billing')">Billing & Subscription</x-app.sidebar-link>
+                    <x-app.sidebar-link href="/settings/subscription" icon="phosphor-credit-card" :active="Request::is('settings/subscription')">Billing & Subscription</x-app.sidebar-link>
                    
                     <x-app.sidebar-link href="/settings/profile" icon="phosphor-gear-six" :active="Request::is('settings/profile')">Settings</x-app.sidebar-link>
                     <!-- <x-app.sidebar-dropdown text="Projects" icon="phosphor-stack" id="projects_dropdown" :active="(Request::is('projects'))" :open="(Request::is('project_a') || Request::is('project_b') || Request::is('project_c')) ? '1' : '0'">
@@ -47,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="relative px-2.5 space-y-1.5 text-zinc-700 dark:text-zinc-400">
+            <div class="relative px-2.5 space-y-1.5 text-white dark:text-zinc-400">
                 
                 <x-app.sidebar-link href="https://devdojo.com/wave/docs" target="_blank" icon="phosphor-book-bookmark-duotone" active="false">Documentation</x-app.sidebar-link>
                 <!-- <x-app.sidebar-link href="https://devdojo.com/questions" target="_blank" icon="phosphor-chat-duotone" active="false">Questions</x-app.sidebar-link>
